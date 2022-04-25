@@ -8,7 +8,7 @@
         'https://code.highcharts.com/mapdata/custom/world.topo.json'
     ).then(response => response.json());
 
-    Highcharts.getJSON('../data/csvjson.json', function (data) {
+    Highcharts.getJSON('https://jsonkeeper.com/b/BFRE', function (data) {
 
         // Initialize the chart
         Highcharts.mapChart('container', {
