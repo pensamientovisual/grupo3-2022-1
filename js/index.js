@@ -8,7 +8,7 @@
         'https://code.highcharts.com/mapdata/custom/world.topo.json'
     ).then(response => response.json());
 
-    Highcharts.getJSON('https://github.com/pensamientovisual/grupo3-2022-1/blob/main/data/csvjson.json', function (data) {
+    Highcharts.getJSON(window.location.href + "data/csvjson.json", function (data) {
 
         // Initialize the chart
         Highcharts.mapChart('container', {
