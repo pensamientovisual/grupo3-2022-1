@@ -20,7 +20,7 @@
     background-color: #6e9add;
     text-align: center;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    padding: 25px;
+    padding: 15px;
 }
 
 .cuerpo2{
@@ -28,12 +28,13 @@
     background-color: #f3dda0;
     text-align: center;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    padding: 25px;
+    padding: 15px;
 }
 
 #wordtree_basic{
-    margin-top: 0%;
     align-content: center;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border: 15px;
 }
+
 

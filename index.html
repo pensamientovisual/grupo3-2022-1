@@ -22,10 +22,10 @@
       function drawChart() {
         var data = google.visualization.arrayToDataTable(
           [ [ 'childLabel', { role: 'style' }],
-            ['Vuelos Mundiales Totales 2019-2020 disminuyeron un -% ', 'blue'],
-            ['Vuelos Mundiales Totales 2020-2021 disminuyeron un -% ', 'blue'],
-            ['Vuelos Mundiales Comerciales 2019-2020 disminuyeron un -% ', 'orange'],
-            ['Vuelos Mundiales Comerciales 2020-2021 disminuyeron un -% ', 'orange'],
+            ['Vuelos Mundiales Totales 2019 al 2020 disminuyeron un 28%', 'blue'],
+            ['Vuelos Mundiales Totales 2020 al 2021 aumentaron un 27%', 'blue'],
+            ['Vuelos Mundiales Comerciales 2019 al 2020 disminuyeron un 42% ', 'orange'],
+            ['Vuelos Mundiales Comerciales 2020 al 2021 aumentaron un 20% ', 'orange'],
           ]
         );
 
@@ -38,6 +38,8 @@
 
         var chart = new google.visualization.WordTree(document.getElementById('wordtree_basic'));
         chart.draw(data, options);
+        
+
       }
     </script>
     <!-- fin grafico arbol isi -->
@@ -99,7 +101,7 @@
             data:{
                 labels:['2019','2020','2021'],
                 datasets:[{ label:'Cantidad de vuelos comerciales totales',
-                        data:[68992010,49919020,63284096],
+                        data:[41991608,24439898,30399981],
                         backgroundColor:[
                             'rgb(255, 196, 102,0.5)',
                             'rgb(255, 196, 102,0.5)',
@@ -121,12 +123,18 @@
 
     </div>
 
-    <div id="wordtree_basic" style="margin: 5%;"></div>
+    <div class="parrafo">
+      <p>En resumen...</p>
+    </div>
+    
+    <div id="wordtree_basic" style="margin: auto;"></div>
+    
+    <!-- Fin flujo (ISI) -->
 
 </html>
 
     </div>
-    <!-- Fin flujo (ISI) -->
+    
   
     <div id="container"></div>
 
