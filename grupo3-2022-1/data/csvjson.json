@@ -1,0 +1,14 @@
+[
+  {
+    "code3": "DEU",
+    "name": "Germany",
+    "value": 9.7,
+    "code": "DE"
+  },
+  {
+    "code3": "USA",
+    "name": "United States",
+    "value": 50,
+    "code": "US"
+  }
+]
