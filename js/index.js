@@ -18,7 +18,7 @@
             },
 
             title: {
-                text: 'Government Spending in National Airlines'
+                text: 'Gasto gubernamental en aerolíneas nacionales'
             },
 
             mapNavigation: {
