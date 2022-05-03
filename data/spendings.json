@@ -1,0 +1,165 @@
+[
+  {
+    "code3": "DEU",
+    "name": "Germany",
+    "value": 15.8,
+    "code": "DE"
+  },
+  {
+    "code3": "USA",
+    "name": "United States",
+    "value": 50,
+    "code": "US"
+  },
+  {
+    "code3": "FRA",
+    "name": "France",
+    "value": 8.575,
+    "code": "FR"
+  },
+  {
+    "code3": "IRL",
+    "name": "Ireland",
+    "value": 0.267,
+    "code": "IE"
+  },
+  {
+    "code3": "FIN",
+    "name": "Finland",
+    "value": 1.672,
+    "code": "FI"
+  },
+  {
+    "code3": "GRC",
+    "name": "Greece",
+    "value": 0.126,
+    "code": "GR"
+  },
+  {
+    "code3": "ITA",
+    "name": "Italy",
+    "value": 0.326,
+    "code": "IT"
+  },
+  {
+    "code3": "ESP",
+    "name": "Spain",
+    "value": 1.768,
+    "code": "ES"
+  },
+  {
+    "code3": "NLD",
+    "name": "Netherlands",
+    "value": 3.586,
+    "code": "NL"
+  },
+  {
+    "code3": "SWE",
+    "name": "Sweden",
+    "value": 0.619,
+    "code": "SE"
+  },
+  {
+    "code3": "GBR",
+    "name": "United Kingdom",
+    "value": 6.519,
+    "code": "GB"
+  },
+  {
+    "code3": "PRT",
+    "name": "Portugal",
+    "value": 0.606,
+    "code": "PT"
+  },
+  {
+    "code3": "ARG",
+    "name": "Argentina",
+    "value": 0.297,
+    "code": "AR"
+  },
+  {
+    "code3": "AUS",
+    "name": "Australia",
+    "value": 0.710,
+    "code": "AU"
+  },
+  {
+    "code3": "BEL",
+    "name": "Belgium",
+    "value": 0.305,
+    "code": "BE"
+  },
+  {
+    "code3": "BRA",
+    "name": "Brazil",
+    "value": 0.319,
+    "code": "BR"
+  },
+  {
+    "code3": "HRV",
+    "name": "Croatia",
+    "value": 0.103,
+    "code": "HR"
+  },
+  {
+    "code3": "EST",
+    "name": "Estonia",
+    "value": 0.06,
+    "code": "EE"
+  },
+  {
+    "code3": "ISL",
+    "name": "Iceland",
+    "value": 0.319,
+    "code": "IS"
+  }
+  ,
+  {
+    "code3": "ISR",
+    "name": "Israel",
+    "value": 0.400,
+    "code": "IL"
+  },
+  {
+    "code3": "JPN",
+    "name": "Japan",
+    "value": 5.555,
+    "code": "JP"
+  },
+  {
+    "code3": "LVA",
+    "name": "Latvia",
+    "value": 0.322,
+    "code": "LV"
+  },
+  {
+    "code3": "MEX",
+    "name": "Mexico",
+    "value": 0.026,
+    "code": "MX"
+  },
+  {
+    "code3": "NZL",
+    "name": "New Zealand",
+    "value": 0.792,
+    "code": "NZ"
+  },
+  {
+    "code3": "NOR",
+    "name": "Norway",
+    "value": 1.145,
+    "code": "NO"
+  },
+  {
+    "code3": "SGP",
+    "name": "Singapore",
+    "value": 8.229,
+    "code": "SG"
+  },
+  {
+    "code3": "CHE",
+    "name": "Switzerland",
+    "value": 1.531,
+    "code": "CH"
+  }
+]
