@@ -1,40 +1,53 @@
-.titulo{
-    font-size: xxx-large;
-    background-color: #83b2fd;
+.titulo {
+  font-size: xxx-large;
+  background-color: #83b2fd;
+  text-align: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  padding: 50px;
+  margin: 0%;
+}
+.parrafo {
+  font-size: medium;
+  background-color: #c9dcfd;
+  text-align: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-style: italic;
+  padding: 25px;
+}
+
+.cuerpo1 {
+  font-size: medium;
+  background-color: #6e9add;
+  text-align: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  padding: 15px;
+}
+
+.cuerpo2 {
+  font-size: medium;
+  background-color: #f3dda0;
+  text-align: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  padding: 15px;
+}
+
+#wordtree_basic {
+  align-content: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  border: 15px;
+}
+
+.columns {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.column {
+    width: 100%;
     text-align: center;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    padding: 50px;
-    margin: 0%;
 }
-.parrafo{
-    font-size:medium;
-    background-color: #c9dcfd;
-    text-align: center;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-style: italic;
-    padding: 25px;
-}
-
-.cuerpo1{
-    font-size: medium;
-    background-color: #6e9add;
-    text-align: center;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    padding: 15px;
-}
-
-.cuerpo2{
-    font-size: medium;
-    background-color: #f3dda0;
-    text-align: center;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    padding: 15px;
-}
-
-#wordtree_basic{
-    align-content: center;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    border: 15px;
-}
-
-
