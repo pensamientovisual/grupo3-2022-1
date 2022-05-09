@@ -17,44 +17,6 @@
     <script src="js/index.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.js"></script>
 
-    <!-- grafico arbol isi -->
-    <script
-      type="text/javascript"
-      src="https://www.gstatic.com/charts/loader.js"
-    ></script>
-    <script type="text/javascript">
-      google.charts.load("current", { packages: ["wordtree"] });
-      google.charts.setOnLoadCallback(drawChart);
-
-      function drawChart() {
-        var data = google.visualization.arrayToDataTable([
-          ["childLabel", { role: "style" }],
-          ["Vuelos Mundiales Totales 2019 al 2020 disminuyeron un 28%", "blue"],
-          ["Vuelos Mundiales Totales 2020 al 2021 aumentaron un 27%", "blue"],
-          [
-            "Vuelos Mundiales Comerciales 2019 al 2020 disminuyeron un 42% ",
-            "orange",
-          ],
-          [
-            "Vuelos Mundiales Comerciales 2020 al 2021 aumentaron un 20% ",
-            "orange",
-          ],
-        ]);
-
-        var options = {
-          wordtree: {
-            format: "implicit",
-            word: "Vuelos",
-          },
-        };
-
-        var chart = new google.visualization.WordTree(
-          document.getElementById("wordtree_basic")
-        );
-        chart.draw(data, options);
-      }
-    </script>
-    <!-- fin grafico arbol isi -->
   </head>
 
   <body>
@@ -121,10 +83,102 @@
     <div class="parrafo">
       <p>En resumen...</p>
     </div>
-
-    <div id="wordtree_basic" style="margin: auto"></div>
-
     <!-- Fin flujo (ISI) -->
+
+    <!-- Mapa mundi -->
     <div id="container"></div>
+    <!-- Mapa mundi -->
+
+    <!-- Ranking aerolineas -->
+    <div class="parrafo"> Aerolíneas con mayor ayuda estatal
+    <div>
+      <p class="cuerpo2">*Ranking de la aerolíneas con mayor ayuda estatal de las que se tiene información*</p>
+      <canvas id="Ranking" height="90%"></canvas>
+      <script>
+      var ctx = document.getElementById("Ranking").getContext("2d");
+      var myChart = new Chart(ctx, {
+        type: "bar",
+        data: {
+          labels: ["Lufthansa Group (Alemania)", "Air France-KLM (Francia)", "American Airlines (EE.UU.)","Alitalia (Italia)", "SAS (Multinacional)"],
+          datasets: [
+            {
+              label: "Gasto Estatal para Aerolíneas en M",
+              data: [11593 , 11172, 5800, 3689, 1370],
+              backgroundColor: [
+                "rgb(0, 0, 255 ,0.5)",
+                "rgb(0, 0, 255 ,0.5)",
+                "rgb(0, 0, 255 ,0.5)",
+                "rgb(0, 0, 255 ,0.5)",
+                "rgb(0, 0, 255 ,0.5)",
+              ],
+            },
+          ],
+        },
+        options: {
+          scales: {
+            yAxes: [
+              {
+                ticks: {
+                  beginAtZero: true,
+                },
+              },
+            ],
+          },
+        },
+      });
+    </script></div>
+  </div>
+    <p class="parrafo"> Mantente encima del avión y verás qué paso con las aerolíneas más ayudadas por su Estado</p>
+    <div class="contenedor">
+      
+      <a href="#">
+           <figure>
+               <img src="avion.png">
+               <div class="capa">
+                   <h3>Lufthansa</h3>
+                   <p>Está aerolínea casi entra en bancarrota durante la pandemia. Donde el 14% del capital aún pertenece al Estado alemán</p>
+               </div>
+              
+           </figure>
+
+           <figure>
+            <img src="avion.png">
+            <div class="capa">
+                <h3>Air France-KLM</h3>
+                <p>Aerolínea nacional que se fusiono con KLM (aerolínea de los Países Bajos)</p>
+            </div>
+           
+           </figure>
+
+           <figure>
+            <img src="avion.png">
+            <div class="capa">
+                <h3>American Airlines</h3>
+                <p>Aerolínea privada pudo llamar devuelta a sus trabajadores mandados al desempleo técnico a causa de la pandemia</p>
+            </div>
+           
+           </figure>
+
+           <figure>
+            <img src="avion.png">
+            <div class="capa">
+                <h3>Alitalia</h3>
+                <p>Se estatitiza en el 2021 y pasa a ser una nueva aerolínea nacional llamada ITA</p>
+            </div>
+           </figure>
+
+           <figure>
+            <img src="avion.png">
+            <div class="capa">
+                <h3>SAS</h3>
+                <p>Aerolínea multinacional recibió ayudas públicas</p>
+            </div>
+           
+           </figure>
+       </a>
+       
+   </div>
+   <!-- fin Ranking aerolineas -->
+
   </body>
 </html>
