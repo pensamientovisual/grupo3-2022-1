@@ -60,9 +60,9 @@
                   label: "Cantidad de vuelos comerciales totales en millones",
                   data: [41.991, 24.439, 30.399],
                   backgroundColor: [
-                    "rgb(255, 196, 102,0.5)",
-                    "rgb(255, 196, 102,0.5)",
-                    "rgb(255, 196, 102,0.5)",
+                    "rgb(250, 173, 55,0.5)",
+                    "rgb(250, 173, 55,0.5)",
+                    "rgb(250, 173, 55,0.5)",
                   ],
                 },
               ],
@@ -81,29 +81,39 @@
           });
         </script>
       </div>
-  
       <!-- Fin flujo (ISI) -->
   
+      <!-- Efecto economico -->
+      <div><p class="subtitulos"> Efecto económico </p></div>
+      <!-- Efecto economico -->
+  
+      <!-- Trabajos perdidos -->
+      <div><p class="subtitulos"> Trabajos perdidos </p></div>
+      <!-- Trabajos perdidos -->
+
       <!-- Mapa mundi -->
+      <div><p class="subtitulos"> Gasto gubernamental en aerolíneas </p></div>
       <div id="container"></div>
       <!-- Mapa mundi -->
   
       <!-- Ranking aerolineas -->
-      <div class="parrafo"> Aerolíneas con mayor ayuda estatal
       <div>
-        <p class="cuerpo2">*Ranking de la aerolíneas con mayor ayuda estatal de las que se tiene información*</p>
+        <p class="cuerpo2"> Aerolíneas con mayor ayuda estatal </p> 
+        <p class="parrafo">*Ranking de la aerolíneas con mayor ayuda estatal de las que se tiene información*</p>
+      <div>
         <canvas id="Ranking" height="90%"></canvas>
         <script>
         var ctx = document.getElementById("Ranking").getContext("2d");
         var myChart = new Chart(ctx, {
           type: "bar",
           data: {
-            labels: ["Lufthansa Group (Alemania)", "Air France-KLM (Francia)", "American Airlines (EE.UU.)","Alitalia (Italia)", "SAS (Multinacional)"],
+            labels: ["Lufthansa Group (Alemania)", "Air France-KLM (Francia)", "American Airlines (EE.UU.)","Alitalia (Italia)", "SAS (Multinacional)", "TAP (Portugal)"],
             datasets: [
               {
-                label: "Gasto Estatal para Aerolíneas en M",
-                data: [11593 , 11172, 5800, 3689, 1370],
+                label: "Gasto Estatal para Aerolíneas en Millones de dólares",
+                data: [11593 , 11172, 5800, 3689, 1370, 1267],
                 backgroundColor: [
+                  "rgb(0, 0, 255 ,0.5)",
                   "rgb(0, 0, 255 ,0.5)",
                   "rgb(0, 0, 255 ,0.5)",
                   "rgb(0, 0, 255 ,0.5)",
@@ -128,7 +138,7 @@
       </script></div>
     </div>
   </div>
-    <p class="parrafo"> Mantente encima del avión y verás qué paso con las aerolíneas más ayudadas por su Estado</p>
+    <p class="cuerpo1"> Mantente encima del icono de la aerolínea y verás qué paso con ella.</p>
     <div class="contenedor">
       
       <a href="#">
@@ -136,7 +146,7 @@
                <img src="Aerolineas/Lufthansa.png">
                <div class="capa">
                    <h3>Lufthansa</h3>
-                   <p>Está aerolínea casi entra en bancarrota durante la pandemia. Donde el 14% del capital aún pertenece al Estado alemán</p>
+                   <p>Está aerolínea casi entra en bancarrota durante la pandemia. Donde el 14% del capital aún pertenece al Estado alemán.</p>
                </div>
               
            </figure>
@@ -145,7 +155,7 @@
             <img src="Aerolineas/KLM.jpg">
             <div class="capa">
                 <h3>Air France-KLM</h3>
-                <p>Aerolínea nacional que se fusiono con KLM (aerolínea de los Países Bajos)</p>
+                <p>Aerolínea nacional que se fusiono con KLM (aerolínea de los Países Bajos).</p>
             </div>
            
            </figure>
@@ -154,7 +164,7 @@
             <img src="Aerolineas/AA.png">
             <div class="capa">
                 <h3>American Airlines</h3>
-                <p>Aerolínea privada pudo llamar devuelta a sus trabajadores mandados al desempleo técnico a causa de la pandemia</p>
+                <p>Aerolínea privada pudo llamar devuelta a sus trabajadores mandados al desempleo técnico a causa de la pandemia.</p>
             </div>
            
            </figure>
@@ -163,7 +173,7 @@
             <img src="Aerolineas/Alitalia.jpg">
             <div class="capa">
                 <h3>Alitalia</h3>
-                <p>Se estatitiza en el 2021 y pasa a ser una nueva aerolínea nacional llamada ITA</p>
+                <p>Se estatitiza en el 2021 y pasa a ser una nueva aerolínea nacional llamada ITA.</p>
             </div>
            </figure>
 
@@ -171,14 +181,29 @@
             <img src="Aerolineas/sas.jpg">
             <div class="capa">
                 <h3>SAS</h3>
-                <p>Aerolínea multinacional recibió ayudas públicas</p>
+                <p>Aerolínea multinacional recibió ayudas públicas.</p>
             </div>
            
            </figure>
+
+           <figure>
+            <img src="Aerolineas/tap.png">
+            <div class="capa">
+                <h3>TAP</h3>
+                <p>El Estado tiene el 100 % del capital de la aerolínea y el 72,5 % del Grupo TAP, que incluye otros activos. </p>
+            </div>
+           
+            </figure>
        </a>
        
    </div>
-   <!-- fin Ranking aerolineas -->
+      <!-- fin Ranking aerolineas -->
+
+      <!-- Proyecciones -->
+      <div><p class="body_3">Proyecciones a futuro </p>
+      
+      </div>
+      <!-- Proyecciones -->
 
   </body>
 </html>
