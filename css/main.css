@@ -23,24 +23,46 @@
   font-size: large;
 }
 
-.titulo {
-  font-size: xxx-large;
-  background-color: #83b2fd;
+#titulo{
+  position: absolute;
+  bottom: 320px;
+  color: white;
   text-align: center;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  padding: 50px;
-  margin: 0%;
+  font-size: 64px;
+  font-family: 'Times New Roman', Times, serif;
+  margin: auto;
+  padding: 5%;
+}
+
+#info{
+  position: absolute;
+  bottom: 68px;
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 17px;
+  padding: 3%;
+}
+
+#parrafo_inicial {
+  background-color: white
+  padding: 5%;
+  box-shadow: 0px 0px 90px gray;
+}
+#titulo2 {
+  font-size: large;
+  text-align: LEFT;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 50px;
+  font-weight: bold;
+  padding: 20px 20px 0px 20px;
 }
 
 .subtitulos {
   font-size: large;
-  background-color: #e1ecff;
-  text-align: center;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  font-style: italic;
-  padding: 25px;
+  text-align: LEFT;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 25px;
+  padding: 0px 20px 20px 20px;
 
 }
 
@@ -148,4 +170,178 @@
   max-width: 220px;
   margin: auto;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.container {
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.header {
+  background: rgb(94, 94, 94);
+  color:white;
+  padding: 1.5rem 0;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  position: fixed;
+  left:0;
+  top: 0;
+  right: 0;
+}
+  .header a {
+    color: white;
+    text-decoration: none;
+  }
+
+.logo {
+  letter-spacing: 5px;
+  font-size: 2em;
+}
+
+.logo-nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navigation ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+  .navigation ul li {
+    display: inline-block;    
+  }
+
+    .navigation ul li a {
+      display: block;
+      padding: 0.5rem 1rem;
+      transition: all 0.2s linear;
+      border-radius: 5px;
+    }
+
+      .navigation ul li a:hover {
+        background: #6e9add;
+      }
+
+.continentes {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  max-width: 1000px;
+  background-color: #6e9add;
+  padding: auto 20%;
+
+}
+
+.america {
+  position: absolute;
+  top: 170px;
+  left: 160px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+  color: rgb(112, 116, 124);
+  padding: 5%;
+}
+#imgamerica{
+  display: none;
+  position: absolute;
+  top: 170px;
+  left: 160px;
+}
+p.america:hover + #imgamerica{
+  display: block;
+}
+
+.asia {
+  position: absolute;
+  top: 70px;
+  left: 700px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+  color: rgb(112, 116, 124);
+}
+#imgasia{
+  display: none;
+  position: absolute;
+  top: 70px;
+  left: 700px;
+}
+p.asia:hover + #imgasia{
+  display: block;
+}
+
+.africa {
+  position: absolute;
+  top: 160px;
+  left: 450px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+  color: rgb(112, 116, 124);
+}
+#imgafrica{
+  display: none;
+  position: absolute;
+  top: 160px;
+  left: 450px;
+}
+p.africa:hover + #imgafrica{
+  display: block;
+}
+
+.europa {
+  position: absolute;
+  top: 40px;
+  left: 470px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+  color: rgb(112, 116, 124);
+}
+#imgeuropa{
+  display: none;
+  position: absolute;
+  top: 40px;
+  left: 470px;
+}
+p.europa:hover + #imgeuropa{
+  display: block;
+}
+.centrado {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%)
+  color: none;
+}
+
+
+
+#imgasia{
+  display: none
+}
+
+#imgeuropa{
+  display: none
+}
+
+#imgafrica{
+  display: none
+}
+
+
+
+p.two:hover #img2{
+  display: block;
+}
+
+#efecto_economico {
+  background-color:rgb(204, 204, 204);
+  padding: 5%;
+  margin: auto;
 }
