@@ -79,8 +79,8 @@
         <h2 id="titulo2">IMPACTO COVID-19</h2>
         <p class="subtitulos">
           Las aerolíneas han sido fuertemente golpeadas por la pandemia,
-          afectando no solo sus ganancias sino la vida de trabajadores,
-          funcionarios y viajeros en todo el mundo. Es por esto que, se han
+          afectando no sólo sus ganancias, sino también la vida de miles de trabajadores,
+          funcionarios y viajeros en todo el mundo. Es por esto, que se han
           estudiado las diferentes consecuencias principalmente económicas que
           se han dejado notar por la llegada del COVID-19 a los diferentes
           países del mundo.
@@ -137,7 +137,7 @@
     <!-- Fin flujo (ISI) -->
     <!-- Efecto economico -->
     <div id="efecto_economico">
-      <p class="cuerpo1">Efecto económico</p>
+      <p class="cuerpo1">Efecto económico en aerolíneas</p>
       <div id="impact_container" class="highcharts-container">
         <!-- <img src="css/1024px-World_map_blank_gmt.svg.png" />
         <p class="africa">AFRICA</p>
@@ -150,346 +150,310 @@
         <img id="imgamerica" src="Gráficos/America.png" /> -->
       </div>
     </div>
-    <!-- Trabajos perdidos -->
+     <!-- Fin Efecto economico -->
 
-    <!-- Inicio Trabajos pre covid -->
-    <div class="body_3">
-      <p class="cuerpo1">Trabajos perdidos en aerolíneas</p>
-      <div id="my_dataviz_puestosdetrabajoprecovid"></div>
-      <script>
-        Highcharts.chart("my_dataviz_puestosdetrabajoprecovid", {
-          chart: {
-            type: "packedbubble",
-            // height: '50%'
-          },
+      <!-- Trabajos perdidos -->
+        <!-- Inicio Trabajos pre covid -->
+        <div class = "body_3"><p class="cuerpo1"> Trabajos perdidos en aerolíneas </p>
+          <div id="my_dataviz_puestosdetrabajoprecovid"></div>    
+          <script>
+                    Highcharts.chart('my_dataviz_puestosdetrabajoprecovid', {
+                chart: {
+                  type: 'packedbubble',
+                // height: '50%'
+                },
           title: {
-            text: "Puestos de trabajo Pre-Covid",
-          },
-          tooltip: {
-            useHTML: true,
-            pointFormat: "<b>{point.name}:</b><br>{point.value}M",
-          },
-          plotOptions: {
-            packedbubble: {
-              minSize: "70%",
-              maxSize: "160%",
-              zMin: 0,
-              zMax: 100,
-              layoutAlgorithm: {
-                splitSeries: false,
-                gravitationalConstant: 0.02,
+                  text: 'Puestos de trabajo Pre-Covid'
               },
-              dataLabels: {
-                enabled: true,
-                format: "<b>{point.name}:</b><br>{point.value}M",
-                filter: {
-                  property: "y",
-                  operator: ">",
-                  value: 0,
+                tooltip: {
+                  useHTML: true,
+                  pointFormat: '<b>{point.name}:</b><br>{point.value}M'
                 },
-                style: {
-                  color: "black",
-                  textOutline: "none",
-                  fontWeight: "normal",
+                plotOptions: {
+                  packedbubble: {
+                    minSize: '70%',
+                    maxSize: '200%',
+                    zMin: 0,
+                    zMax: 100,
+                    layoutAlgorithm: {
+                      splitSeries: false,
+                      gravitationalConstant: 0.02
+                    },
+                    dataLabels: {
+                      enabled: true,
+                      format: '<b>{point.name}:</b><br>{point.value}M',
+                      filter: {
+                        property: 'y',
+                        operator: '>',
+                        value: 0
+                      },
+                      style: {
+                        color: 'black',
+                        textOutline: 'none',
+                        fontWeight: 'normal'
+                      }
+                    }
+                  }
                 },
-              },
-            },
-          },
-          series: [
-            {
-              name: "Mundo",
-              data: [
+                series: [
                 {
-                  name: "Mundo",
-                  value: 11.3,
-                },
-              ],
-            },
-            {
-              name: "Asia-Pacifico",
-              data: [
-                {
-                  name: "Asia-Pacifico",
-                  value: 4.2,
-                },
-              ],
-            },
-            {
-              name: "Europa",
-              data: [
-                {
-                  name: "Europa",
-                  value: 2.7,
-                },
-              ],
-            },
-            {
-              name: "Africa",
-              data: [
-                {
-                  name: "Africa",
-                  value: 0.44,
-                },
-              ],
-            },
-            {
-              name: "America del Norte",
-              data: [
-                {
-                  name: "America del Norte",
-                  value: 2.7,
-                },
-              ],
-            },
-            {
-              name: "Oriente Medio",
-              data: [
-                {
-                  name: "Oriente Medio",
-                  value: 0.595,
-                },
-              ],
-            },
-            {
-              name: "America Latina y Caribe",
-              data: [
-                {
-                  name: "America Latina y Caribe",
-                  value: 0.722,
-                },
-              ],
-            },
-          ],
-        });
-      </script>
-    </div>
-    <!-- Fin Trabajos pre covid -->
+                    name: 'Mundo',
+                    data: [{
+                        "name": "Mundo",
+                        "value": 11.3
+                    }]
+                  },
+                  {
+                    name: 'Asia-Pacífico',
+                    data: [{
+                        "name": "Asia-Pacífico",
+                        "value": 4.2
+                    }]
+                  },
+                  {
+                    name: 'Europa',
+                    data: [{
+                        "name": "Europa",
+                        "value": 2.7
+                    }]
+                  },
+                  {
+                    name: 'África',
+                    data: [{
+                        "name": "África",
+                        "value": 0.440
+                    }]
+                  },
+                  {
+                    name: 'América del Norte',
+                    data: [{
+                        "name": "América del Norte",
+                        "value": 2.7
+                    }]
+                  },
+                  {
+                    name: 'Oriente Medio',
+                    data: [{
+                        "name": "Oriente Medio",
+                        "value": 0.595
+                    }]
+                  },
+                  {
+                    name: 'América Latina y Caribe',
+                    data: [{
+                        "name": "América Latina y Caribe",
+                        "value": 0.722
+                    }]
+                  }
+                ]
+              });
+                    
+            </script>
+          <!-- Fin Trabajos pre covid -->
 
-    <!-- Inicio Trabajos POST -->
-    <div class="body_3">
-      <div id="my_dataviz_puestosdetrabajopostcovid"></div>
-      <script>
-        Highcharts.chart("my_dataviz_puestosdetrabajopostcovid", {
-          chart: {
-            type: "packedbubble",
-            // height: '50%'
-          },
-          title: {
-            text: "Puestos de trabajo Post-Covid",
-          },
-          tooltip: {
-            useHTML: true,
-            pointFormat: "<b>{point.name}:</b><br>{point.value}M",
-          },
-          plotOptions: {
-            packedbubble: {
-              minSize: "70%",
-              maxSize: "160%",
-              zMin: 0,
-              zMax: 100,
-              layoutAlgorithm: {
-                splitSeries: false,
-                gravitationalConstant: 0.02,
-              },
-              dataLabels: {
-                enabled: true,
-                format: "<b>{point.name}:</b><br>{point.value}M",
-                filter: {
-                  property: "y",
-                  operator: ">",
-                  value: 0,
-                },
-                style: {
-                  color: "black",
-                  textOutline: "none",
-                  fontWeight: "normal",
-                },
-              },
-            },
-          },
-          series: [
-            {
-              name: "Mundo",
-              data: [
-                {
-                  name: "Mundo",
-                  value: 9.0,
-                },
-              ],
-            },
-            {
-              name: "Asia-Pacifico",
-              data: [
-                {
-                  name: "Asia-Pacifico",
-                  value: 3.4,
-                },
-              ],
-            },
-            {
-              name: "Europa",
-              data: [
-                {
-                  name: "Europa",
-                  value: 2.1,
-                },
-              ],
-            },
-            {
-              name: "Africa",
-              data: [
-                {
-                  name: "Africa",
-                  value: 0.374,
-                },
-              ],
-            },
-            {
-              name: "America del Norte",
-              data: [
-                {
-                  name: "America del Norte",
-                  value: 2.1,
-                },
-              ],
-            },
-            {
-              name: "Oriente Medio",
-              data: [
-                {
-                  name: "Oriente Medio",
-                  value: 0.48,
-                },
-              ],
-            },
-            {
-              name: "America Latina y Caribe",
-              data: [
-                {
-                  name: "America Latina y Caribe",
-                  value: 0.563,
-                },
-              ],
-            },
-          ],
-        });
-      </script>
-    </div>
-    <!-- Fin Trabajos POST -->
+          <!-- Inicio Trabajos POST -->
+          <div class>
+            <p class="parrafo"></p>
+          </div>
 
-    <!-- Inicio Trabajos en Riesgo -->
-    <div class="body_3">
-      <div id="my_dataviz_puestosdetrabajoenriesgo"></div>
-      <script>
-        Highcharts.chart("my_dataviz_puestosdetrabajoenriesgo", {
-          chart: {
-            type: "packedbubble",
-            // height: '50%'
-          },
-          title: {
-            text: "Puestos de trabajo en riesgo",
-          },
-          tooltip: {
-            useHTML: true,
-            pointFormat: "<b>{point.name}:</b><br>{point.value}M",
-          },
-          plotOptions: {
-            packedbubble: {
-              minSize: "70%",
-              maxSize: "160%",
-              zMin: 0,
-              zMax: 100,
-              layoutAlgorithm: {
-                splitSeries: false,
-                gravitationalConstant: 0.02,
-              },
-              dataLabels: {
-                enabled: true,
-                format: "<b>{point.name}:</b><br>{point.value}M",
-                filter: {
-                  property: "y",
-                  operator: ">",
-                  value: 0,
+          <div id="my_dataviz_puestosdetrabajopostcovid"></div>    
+          <script>
+                      Highcharts.chart('my_dataviz_puestosdetrabajopostcovid', {
+                  chart: {
+                    type: 'packedbubble',
+                  // height: '50%'
+                  },
+            title: {
+                    text: 'Puestos de trabajo Post-Covid'
                 },
-                style: {
-                  color: "black",
-                  textOutline: "none",
-                  fontWeight: "normal",
-                },
-              },
-            },
-          },
-          series: [
-            {
-              name: "Mundo",
-              data: [
-                {
-                  name: "Mundo",
-                  value: 2.3,
-                },
-              ],
-            },
-            {
-              name: "Asia-Pacifico",
-              data: [
-                {
-                  name: "Asia-Pacifico",
-                  value: 0.796,
-                },
-              ],
-            },
-            {
-              name: "Europa",
-              data: [
-                {
-                  name: "Europa",
-                  value: 0.587,
-                },
-              ],
-            },
-            {
-              name: "Africa",
-              data: [
-                {
-                  name: "Africa",
-                  value: 0.066,
-                },
-              ],
-            },
-            {
-              name: "America del Norte",
-              data: [
-                {
-                  name: "America del Norte",
-                  value: 0.62,
-                },
-              ],
-            },
-            {
-              name: "Oriente Medio",
-              data: [
-                {
-                  name: "Oriente Medio",
-                  value: 0.115,
-                },
-              ],
-            },
-            {
-              name: "America Latina y Caribe",
-              data: [
-                {
-                  name: "America Latina y Caribe",
-                  value: 0.159,
-                },
-              ],
-            },
-          ],
-        });
-      </script>
-    </div>
-    <!-- Fin Trabajos en Riesgo -->
+                  tooltip: {
+                    useHTML: true,
+                    pointFormat: '<b>{point.name}:</b><br>{point.value}M'
+                  },
+                  plotOptions: {
+                    packedbubble: {
+                      minSize: '70%',
+                      maxSize: '200%',
+                      zMin: 0,
+                      zMax: 100,
+                      layoutAlgorithm: {
+                        splitSeries: false,
+                        gravitationalConstant: 0.02
+                      },
+                      dataLabels: {
+                        enabled: true,
+                        format: '<b>{point.name}:</b><br>{point.value}M',
+                        filter: {
+                          property: 'y',
+                          operator: '>',
+                          value: 0
+                        },
+                        style: {
+                          color: 'black',
+                          textOutline: 'none',
+                          fontWeight: 'normal'
+                        }
+                      }
+                    }
+                  },
+                  series: [
+                  {
+                      name: 'Mundo',
+                      data: [{
+                          "name": "Mundo",
+                          "value": 9.0
+                      }]
+                    },
+                    {
+                      name: 'Asia-Pacífico',
+                      data: [{
+                          "name": "Asia-Pacífico",
+                          "value": 3.4
+                      }]
+                    },
+                    {
+                      name: 'Europa',
+                      data: [{
+                          "name": "Europa",
+                          "value": 2.1
+                      }]
+                    },
+                    {
+                      name: 'África',
+                      data: [{
+                          "name": "África",
+                          "value": 0.374
+                      }]
+                    },
+                    {
+                      name: 'América del Norte',
+                      data: [{
+                          "name": "América del Norte",
+                          "value": 2.1
+                      }]
+                    },
+                    {
+                      name: 'Oriente Medio',
+                      data: [{
+                          "name": "Oriente Medio",
+                          "value": 0.480
+                      }]
+                    },
+                    {
+                      name: 'América Latina y Caribe',
+                      data: [{
+                          "name": "América Latina y Caribe",
+                          "value": 0.563
+                      }]
+                    }
+                  ]
+                });
+                      
+              </script>
+          <!-- Fin Trabajos POST -->
 
-    <!-- Trabajos perdidos -->
+              <!-- Inicio Trabajos en Riesgo -->
+                <div class>
+                  <p class="parrafo"></p>
+                </div>
+                
+                <div id="my_dataviz_puestosdetrabajoenriesgo"></div>    
+                <script>
+                            Highcharts.chart('my_dataviz_puestosdetrabajoenriesgo', {
+                        chart: {
+                          type: 'packedbubble',
+                        // height: '50%'
+                        },
+                  title: {
+                          text: 'Puestos de trabajo en riesgo'
+                      },
+                        tooltip: {
+                          useHTML: true,
+                          pointFormat: '<b>{point.name}:</b><br>{point.value}M'
+                        },
+                        plotOptions: {
+                          packedbubble: {
+                            minSize: '70%',
+                            maxSize: '200%',
+                            zMin: 0,
+                            zMax: 100,
+                            layoutAlgorithm: {
+                              splitSeries: false,
+                              gravitationalConstant: 0.02
+                            },
+                            dataLabels: {
+                              enabled: true,
+                              format: '<b>{point.name}:</b><br>{point.value}M',
+                              filter: {
+                                property: 'y',
+                                operator: '>',
+                                value: 0
+                              },
+                              style: {
+                                color: 'black',
+                                textOutline: 'none',
+                                fontWeight: 'normal'
+                              }
+                            }
+                          }
+                        },
+                        series: [
+                        {
+                            name: 'Mundo',
+                            data: [{
+                                "name": "Mundo",
+                                "value": 2.3
+                            }]
+                          },
+                          {
+                            name: 'Asia-Pacífico',
+                            data: [{
+                                "name": "Asia-Pacífico",
+                                "value": 0.796
+                            }]
+                          },
+                          {
+                            name: 'Europa',
+                            data: [{
+                                "name": "Europa",
+                                "value": 0.587
+                            }]
+                          },
+                          {
+                            name: 'África',
+                            data: [{
+                                "name": "África",
+                                "value": 0.066
+                            }]
+                          },
+                          {
+                            name: 'América del Norte',
+                            data: [{
+                                "name": "América del Norte",
+                                "value": 0.620
+                            }]
+                          },
+                          {
+                            name: 'Oriente Medio',
+                            data: [{
+                                "name": "Oriente Medio",
+                                "value": 0.115
+                            }]
+                          },
+                          {
+                            name: 'América Latina y Caribe',
+                            data: [{
+                                "name": "América Latina y Caribe",
+                                "value": 0.159
+                            }]
+                          }
+                        ]
+                      });
+                            
+                    </script>
+        </div>
+                <!-- Fin Trabajos en Riesgo -->
+      <!-- Trabajos perdidos -->
 
     <!-- Mapa mundi -->
     <div class="body_3">
@@ -508,7 +472,7 @@
     <div class="body_3">
       <p class="cuerpo2">Aerolíneas con mayor ayuda estatal</p>
       <p class="parrafo">
-        *Ranking de la aerolíneas con mayor ayuda estatal de las que se tiene
+        *Ranking de las aerolíneas con mayor ayuda estatal de las que se tiene
         información*
       </p>
       <div>
@@ -557,7 +521,7 @@
       </div>
     </div>
     <p class="cuerpo1">
-      Mantente encima del icono de la aerolínea y verás qué paso con ella.
+      *Mantente encima del icono de la aerolínea y verás qué pasó con ella*
     </p>
     <div class="contenedor">
       <a href="#">
