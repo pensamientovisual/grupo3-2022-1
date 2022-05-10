@@ -1,0 +1,38 @@
+[
+    {
+      "code3": "IRQ",
+      "z": 116,
+      "code": "IQ",
+      "region": "Medio Oriente"
+    },
+    {
+      "code3": "COL",
+      "z": 83,
+      "code": "CO",
+      "region": "America Latina y Caribe"
+    },
+    {
+      "code3": "NGA",
+      "z": 26,
+      "code": "NG",
+      "region": "Africa"
+    },
+    {
+      "code3": "IDN",
+      "z": 541,
+      "code": "ID",
+      "region": "Asia-Pacifico"
+    },
+    {
+      "code3": "USA",
+      "z": 403,
+      "code": "US",
+      "region": "America del Norte"
+    },
+    {
+      "code3": "FRA",
+      "z": 511,
+      "code": "FR",
+      "region": "Europa"
+    }
+  ]

@@ -11,10 +11,14 @@
     Highcharts.getJSON(window.location.href + "/data/spendings.json", function (data) {
 
         // Initialize the chart
-        Highcharts.mapChart('container', {
+        Highcharts.mapChart('gastoGob', {
 
             chart: {
                 map: topology
+            },
+
+            title: {
+                text: undefined
             },
 
             mapNavigation: {
@@ -26,7 +30,7 @@
 
             legend: {
                 title: {
-                    text: 'Gasto gubernamental en aerolineas en MM de dolares',
+                    text: 'Gasto estatal en aerolineas (MM)',
                     style: {
                         color: ( // theme
                             Highcharts.defaultOptions &&
@@ -54,14 +58,12 @@
             },
 
             colorAxis: {
-                min: 0.1,
-                type: 'logarithmic',
-                minColor: '#EEEEFF',
-                maxColor: '#000022',
+                min: 0,
+                max: 20,
+                type: 'linear',
                 stops: [
-                    [0, '#EFEFFF'],
-                    [0.8, '#4444FF'],
-                    [1, '#000022']
+                    [0, '#82b2ff'],
+                    [0.6, '#2a78f5']
                 ]
             },
 
@@ -74,7 +76,14 @@
                         color: '#a4edba'
                     }
                 }
-            }]
+            },
+            {
+                allAreas: false,
+                showInLegend: true,
+                name: "Gasto no disponible/encontrado/tiene",
+                joinBy: ['iso-a3', 'code3'],
+                color: '#e0e0e0',
+            },]
         });
     });
 

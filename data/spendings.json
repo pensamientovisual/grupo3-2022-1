@@ -12,6 +12,12 @@
     "code": "US"
   },
   {
+    "code3": "RUS",
+    "name": "Russian Federation",
+    "value": 1.117,
+    "code": "RU"
+  },
+  {
     "code3": "FRA",
     "name": "France",
     "value": 8.575,

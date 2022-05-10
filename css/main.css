@@ -44,7 +44,7 @@
 }
 
 #parrafo_inicial {
-  background-color: white
+  background-color: white;
   padding: 5%;
   box-shadow: 0px 0px 90px gray;
 }
@@ -188,6 +188,7 @@
   left:0;
   top: 0;
   right: 0;
+  z-index: 1;
 }
   .header a {
     color: white;
@@ -316,7 +317,7 @@ p.europa:hover + #imgeuropa{
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%)
+  transform: translate(-50%, -50%);
   color: none;
 }
 
