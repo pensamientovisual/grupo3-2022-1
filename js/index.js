@@ -17,9 +17,6 @@
                 map: topology
             },
 
-            title: {
-            },
-
             mapNavigation: {
                 enabled: true,
                 buttonOptions: {
