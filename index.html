@@ -102,7 +102,9 @@
       <!-- Fin flujo (ISI) -->
       <!-- Efecto economico -->
       <div id = "efecto_economico">
-        <p class="cuerpo1"> Efecto económico </p>
+        <p class="cuerpo1"> Efecto económico</p>
+        <p class="parrafo"> Se muestra la actividad económica que genero cada país cuentizada en capital, trabajo, venta de servicios, etc. Donde se observa una baja en la actividad económica post-covid en todos los continentes.</p>
+        <p class="parrafo"> Mantente por encima del continente para conocer su actividad económica</p>
         <div class = "continentes">
           <img src="css/1024px-World_map_blank_gmt.svg.png"/>
           <p class="africa">AFRICA</p>
@@ -115,8 +117,9 @@
           <img id = "imgamerica" src="Gráficos/America.png"/>
         </div>
       </div>
-      <!-- Trabajos perdidos -->
+
       
+      <!-- Trabajos perdidos -->
         <!-- Inicio Trabajos pre covid -->
         <div class = "body_3"><p class="cuerpo1"> Trabajos perdidos en aerolíneas </p>
           <div id="my_dataviz_puestosdetrabajoprecovid"></div>    
@@ -135,8 +138,8 @@
                 },
                 plotOptions: {
                   packedbubble: {
-                    minSize: '20%',
-                    maxSize: '160%',
+                    minSize: '70%',
+                    maxSize: '200%',
                     zMin: 0,
                     zMax: 100,
                     layoutAlgorithm: {
@@ -168,9 +171,9 @@
                     }]
                   },
                   {
-                    name: 'Asia-Pacifico',
+                    name: 'Asia-Pacífico',
                     data: [{
-                        "name": "Asia-Pacifico",
+                        "name": "Asia-Pacífico",
                         "value": 4.2
                     }]
                   },
@@ -182,16 +185,16 @@
                     }]
                   },
                   {
-                    name: 'Africa',
+                    name: 'África',
                     data: [{
-                        "name": "Africa",
+                        "name": "África",
                         "value": 0.440
                     }]
                   },
                   {
-                    name: 'America del Norte',
+                    name: 'América del Norte',
                     data: [{
-                        "name": "America del Norte",
+                        "name": "América del Norte",
                         "value": 2.7
                     }]
                   },
@@ -203,9 +206,9 @@
                     }]
                   },
                   {
-                    name: 'America Latina y Caribe',
+                    name: 'América Latina y Caribe',
                     data: [{
-                        "name": "America Latina y Caribe",
+                        "name": "América Latina y Caribe",
                         "value": 0.722
                     }]
                   }
@@ -234,8 +237,8 @@
                   },
                   plotOptions: {
                     packedbubble: {
-                      minSize: '20%',
-                      maxSize: '160%',
+                      minSize: '70%',
+                      maxSize: '200%',
                       zMin: 0,
                       zMax: 100,
                       layoutAlgorithm: {
@@ -267,9 +270,9 @@
                       }]
                     },
                     {
-                      name: 'Asia-Pacifico',
+                      name: 'Asia-Pacífico',
                       data: [{
-                          "name": "Asia-Pacifico",
+                          "name": "Asia-Pacífico",
                           "value": 3.4
                       }]
                     },
@@ -281,16 +284,16 @@
                       }]
                     },
                     {
-                      name: 'Africa',
+                      name: 'África',
                       data: [{
-                          "name": "Africa",
+                          "name": "África",
                           "value": 0.374
                       }]
                     },
                     {
-                      name: 'America del Norte',
+                      name: 'América del Norte',
                       data: [{
-                          "name": "America del Norte",
+                          "name": "América del Norte",
                           "value": 2.1
                       }]
                     },
@@ -302,9 +305,9 @@
                       }]
                     },
                     {
-                      name: 'America Latina y Caribe',
+                      name: 'América Latina y Caribe',
                       data: [{
-                          "name": "America Latina y Caribe",
+                          "name": "América Latina y Caribe",
                           "value": 0.563
                       }]
                     }
@@ -333,8 +336,8 @@
                         },
                         plotOptions: {
                           packedbubble: {
-                            minSize: '20%',
-                            maxSize: '160%',
+                            minSize: '70%',
+                            maxSize: '200%',
                             zMin: 0,
                             zMax: 100,
                             layoutAlgorithm: {
@@ -366,9 +369,9 @@
                             }]
                           },
                           {
-                            name: 'Asia-Pacifico',
+                            name: 'Asia-Pacífico',
                             data: [{
-                                "name": "Asia-Pacifico",
+                                "name": "Asia-Pacífico",
                                 "value": 0.796
                             }]
                           },
@@ -380,16 +383,16 @@
                             }]
                           },
                           {
-                            name: 'Africa',
+                            name: 'África',
                             data: [{
-                                "name": "Africa",
+                                "name": "África",
                                 "value": 0.066
                             }]
                           },
                           {
-                            name: 'America del Norte',
+                            name: 'América del Norte',
                             data: [{
-                                "name": "America del Norte",
+                                "name": "América del Norte",
                                 "value": 0.620
                             }]
                           },
@@ -401,9 +404,9 @@
                             }]
                           },
                           {
-                            name: 'America Latina y Caribe',
+                            name: 'América Latina y Caribe',
                             data: [{
-                                "name": "America Latina y Caribe",
+                                "name": "América Latina y Caribe",
                                 "value": 0.159
                             }]
                           }
@@ -413,7 +416,6 @@
                     </script>
                 </div>
                 <!-- Fin Trabajos en Riesgo -->
-      
       <!-- Trabajos perdidos -->
         
 
@@ -513,7 +515,7 @@
             <img src="Aerolineas/sas.jpg">
             <div class="capa">
                 <h3>SAS</h3>
-                <p>Aerolínea multinacional recibió ayudas públicas.</p>
+                <p>Aerolínea multinacional recibió ayudas públicas y pudo recuperarse.</p>
             </div>
            
            </figure>
@@ -634,7 +636,7 @@
               });                   
         </script>
 
-        <p class="subtitulos"> 
+        <p class="parrafo"> 
           Es importante considerar que las diferencias en los procesos de 
           vacunación entre los países del mundo y los problemas logísticos pueden 
           retrasar la reactivación, especialmente si los Gobiernos no levantan las 

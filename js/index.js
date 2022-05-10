@@ -17,6 +17,10 @@
                 map: topology
             },
 
+            title: { 'Gasto gubernamental en aerolíneas en Millones de dólares'
+
+            },
+
             mapNavigation: {
                 enabled: true,
                 buttonOptions: {
