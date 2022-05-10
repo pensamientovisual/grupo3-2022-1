@@ -19,48 +19,98 @@
 
   </head>
 
-  <body>
-    <div>
-      <h2 class="titulo">Aerolíneas durante la pandemia</h2>
-    </div>
-
-    <div>
-      <p class="parrafo">
-        Las aerolíneas han sido fuertemente golpeadas por la pandemia, afectando
-        no solo sus ganancias sino la vida de trabajadores, funcionarios y
-        viajeros en todo el mundo. Es por esto que, se han estudiado múltiples
-        factores y consecuencias.
-      </p>
-      <p class="parrafo">Observa el impacto</p>
-    </div>
-
-    <!-- Grafico flujo (ISI) -->
-    <div class>
-      <p class="cuerpo1">Impacto en vuelos en todo el mundo</p>
-      <canvas id="primeratabla" height="90%"></canvas>
-      <script>
-        var ctx = document.getElementById("primeratabla").getContext("2d");
+  <body class = "body">
+    <div class = "body_2">
+      <div>
+        <h2 class="titulo">Aerolíneas durante la pandemia</h2>
+      </div>
+  
+      <div>
+        <p class="parrafo">
+          Las aerolíneas han sido fuertemente golpeadas por la pandemia, afectando
+          no solo sus ganancias sino la vida de trabajadores, funcionarios y
+          viajeros en todo el mundo. Es por esto que, se han estudiado múltiples
+          factores y consecuencias.
+        </p>
+        <p class="parrafo">Observa el impacto</p>
+      </div>
+  
+      <!-- Grafico flujo (ISI) -->
+      <div class>
+        <p class="cuerpo1">Impacto en vuelos en todo el mundo</p>
+        <canvas id="primeratabla" height="90%"></canvas>
+        <script>
+          var ctx = document.getElementById("primeratabla").getContext("2d");
+          var myChart = new Chart(ctx, {
+            type: "bar",
+            data: {
+              labels: ["2019", "2020", "2021"],
+              datasets: [
+                {
+                  label: "Cantidad de vuelos totales en M",
+                  data: [68.990, 49.929, 63.284],
+                  backgroundColor: [
+                    "rgb(66, 134, 244 ,0.5)",
+                    "rgb(66, 134, 244,0.5)",
+                    "rgb(66, 134, 244,0.5)",
+                  ],
+                },
+                {
+                  label: "Cantidad de vuelos comerciales totales en M",
+                  data: [41.991, 24.439, 30.399],
+                  backgroundColor: [
+                    "rgb(255, 196, 102,0.5)",
+                    "rgb(255, 196, 102,0.5)",
+                    "rgb(255, 196, 102,0.5)",
+                  ],
+                },
+              ],
+            },
+            options: {
+              scales: {
+                yAxes: [
+                  {
+                    ticks: {
+                      beginAtZero: true,
+                    },
+                  },
+                ],
+              },
+            },
+          });
+        </script>
+      </div>
+  
+      <div class="parrafo">
+        <p>En resumen...</p>
+      </div>
+      <!-- Fin flujo (ISI) -->
+  
+      <!-- Mapa mundi -->
+      <div id="container"></div>
+      <!-- Mapa mundi -->
+  
+      <!-- Ranking aerolineas -->
+      <div class="parrafo"> Aerolíneas con mayor ayuda estatal
+      <div>
+        <p class="cuerpo2">*Ranking de la aerolíneas con mayor ayuda estatal de las que se tiene información*</p>
+        <canvas id="Ranking" height="90%"></canvas>
+        <script>
+        var ctx = document.getElementById("Ranking").getContext("2d");
         var myChart = new Chart(ctx, {
           type: "bar",
           data: {
-            labels: ["2019", "2020", "2021"],
+            labels: ["Lufthansa Group (Alemania)", "Air France-KLM (Francia)", "American Airlines (EE.UU.)","Alitalia (Italia)", "SAS (Multinacional)"],
             datasets: [
               {
-                label: "Cantidad de vuelos totales en M",
-                data: [68.990, 49.929, 63.284],
+                label: "Gasto Estatal para Aerolíneas en M",
+                data: [11593 , 11172, 5800, 3689, 1370],
                 backgroundColor: [
-                  "rgb(66, 134, 244 ,0.5)",
-                  "rgb(66, 134, 244,0.5)",
-                  "rgb(66, 134, 244,0.5)",
-                ],
-              },
-              {
-                label: "Cantidad de vuelos comerciales totales en M",
-                data: [41.991, 24.439, 30.399],
-                backgroundColor: [
-                  "rgb(255, 196, 102,0.5)",
-                  "rgb(255, 196, 102,0.5)",
-                  "rgb(255, 196, 102,0.5)",
+                  "rgb(0, 0, 255 ,0.5)",
+                  "rgb(0, 0, 255 ,0.5)",
+                  "rgb(0, 0, 255 ,0.5)",
+                  "rgb(0, 0, 255 ,0.5)",
+                  "rgb(0, 0, 255 ,0.5)",
                 ],
               },
             ],
@@ -77,63 +127,15 @@
             },
           },
         });
-      </script>
+      </script></div>
     </div>
-
-    <div class="parrafo">
-      <p>En resumen...</p>
-    </div>
-    <!-- Fin flujo (ISI) -->
-
-    <!-- Mapa mundi -->
-    <div id="container"></div>
-    <!-- Mapa mundi -->
-
-    <!-- Ranking aerolineas -->
-    <div class="parrafo"> Aerolíneas con mayor ayuda estatal
-    <div>
-      <p class="cuerpo2">*Ranking de la aerolíneas con mayor ayuda estatal de las que se tiene información*</p>
-      <canvas id="Ranking" height="90%"></canvas>
-      <script>
-      var ctx = document.getElementById("Ranking").getContext("2d");
-      var myChart = new Chart(ctx, {
-        type: "bar",
-        data: {
-          labels: ["Lufthansa Group (Alemania)", "Air France-KLM (Francia)", "American Airlines (EE.UU.)","Alitalia (Italia)", "SAS (Multinacional)"],
-          datasets: [
-            {
-              label: "Gasto Estatal para Aerolíneas en M",
-              data: [11593 , 11172, 5800, 3689, 1370],
-              backgroundColor: [
-                "rgb(0, 0, 255 ,0.5)",
-                "rgb(0, 0, 255 ,0.5)",
-                "rgb(0, 0, 255 ,0.5)",
-                "rgb(0, 0, 255 ,0.5)",
-                "rgb(0, 0, 255 ,0.5)",
-              ],
-            },
-          ],
-        },
-        options: {
-          scales: {
-            yAxes: [
-              {
-                ticks: {
-                  beginAtZero: true,
-                },
-              },
-            ],
-          },
-        },
-      });
-    </script></div>
   </div>
     <p class="parrafo"> Mantente encima del avión y verás qué paso con las aerolíneas más ayudadas por su Estado</p>
     <div class="contenedor">
       
       <a href="#">
            <figure>
-               <img src="avion.png">
+               <img src="Aerolineas/Lufthansa.png">
                <div class="capa">
                    <h3>Lufthansa</h3>
                    <p>Está aerolínea casi entra en bancarrota durante la pandemia. Donde el 14% del capital aún pertenece al Estado alemán</p>
@@ -142,7 +144,7 @@
            </figure>
 
            <figure>
-            <img src="avion.png">
+            <img src="Aerolineas/KLM.jpg">
             <div class="capa">
                 <h3>Air France-KLM</h3>
                 <p>Aerolínea nacional que se fusiono con KLM (aerolínea de los Países Bajos)</p>
@@ -151,7 +153,7 @@
            </figure>
 
            <figure>
-            <img src="avion.png">
+            <img src="Aerolineas/AA.png">
             <div class="capa">
                 <h3>American Airlines</h3>
                 <p>Aerolínea privada pudo llamar devuelta a sus trabajadores mandados al desempleo técnico a causa de la pandemia</p>
@@ -160,7 +162,7 @@
            </figure>
 
            <figure>
-            <img src="avion.png">
+            <img src="Aerolineas/Alitalia.jpg">
             <div class="capa">
                 <h3>Alitalia</h3>
                 <p>Se estatitiza en el 2021 y pasa a ser una nueva aerolínea nacional llamada ITA</p>
@@ -168,7 +170,7 @@
            </figure>
 
            <figure>
-            <img src="avion.png">
+            <img src="Aerolineas/sas.jpg">
             <div class="capa">
                 <h3>SAS</h3>
                 <p>Aerolínea multinacional recibió ayudas públicas</p>

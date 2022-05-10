@@ -1,3 +1,16 @@
+.body{
+  background-image: url("airport.jpg");
+  background-size: 100%;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.body_2{
+  margin: 30% auto 1%;
+  padding: 5%;
+  background-color: rgb(204, 204, 204);
+  box-shadow: -2px -10px 90px black;
+}
 .titulo {
   font-size: xxx-large;
   background-color: #83b2fd;
@@ -48,6 +61,8 @@
 
 .contenedor{
   width: 100%;
+  position: center:
+  background-color: white;
   justify-content: center;
   align-items: center;
   height: 100vh;
