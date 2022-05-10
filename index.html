@@ -94,8 +94,9 @@
       <!-- Efecto economico -->
   
       <!-- Trabajos perdidos -->
+      
         <!-- Inicio Trabajos pre covid -->
-        <div class = "body_3"><p class="subtitulos"> Trabajos perdidos </p></div>
+        <div class = "body_3"><p class="subtitulos"> Trabajos perdidos </p>
           <div id="my_dataviz_puestosdetrabajoprecovid"></div>    
           <script>
                     Highcharts.chart('my_dataviz_puestosdetrabajoprecovid', {
@@ -190,13 +191,12 @@
               });
                     
             </script>
+        </div>
           <!-- Fin Trabajos pre covid -->
 
           <!-- Inicio Trabajos POST -->
-          <div class>
-            <p class="parrafo"></p>
-          <div>
-          <div id="my_dataviz_puestosdetrabajopostcovid"></div>    
+          <div class = "body_3"></p>
+            <div id="my_dataviz_puestosdetrabajopostcovid"></div>    
           <script>
                       Highcharts.chart('my_dataviz_puestosdetrabajopostcovid', {
                   chart: {
@@ -290,13 +290,12 @@
                 });
                       
               </script>
-              <!-- Fin Trabajos POST -->
+          </div>
+          <!-- Fin Trabajos POST -->
 
               <!-- Inicio Trabajos en Riesgo -->
-                <div class>
-                  <p class="parrafo"></p>
-                <div>
-                <div id="my_dataviz_puestosdetrabajoenriesgo"></div>    
+                <div class = "body_3"></p>
+                  <div id="my_dataviz_puestosdetrabajoenriesgo"></div>    
                 <script>
                             Highcharts.chart('my_dataviz_puestosdetrabajoenriesgo', {
                         chart: {
@@ -390,7 +389,8 @@
                       });
                             
                     </script>
-                    <!-- Fin Trabajos en Riesgo -->
+                </div>
+                <!-- Fin Trabajos en Riesgo -->
       
       <!-- Trabajos perdidos -->
         
@@ -511,8 +511,8 @@
 
       <!-- Proyecciones -->
       <div class = "body_3"><p class="subtitulos">Proyecciones a futuro </p>
-      </div>
-      <div id="my_dataviz_proyecciones"></div>    
+
+        <div id="my_dataviz_proyecciones"></div>    
         <style>
             .highcharts-figure,
             .highcharts-data-table table {
@@ -567,7 +567,7 @@
                   type: 'pie'
                 },
                 title: {
-                  text: 'Los analistas de la industria aérea consideran que ésta se recuperará en...'
+                  text: 'Los analistas de la industria aérea consideran que ésta...'
                 },
                 tooltip: {
                   pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
@@ -591,27 +591,37 @@
                   name: 'Brands',
                   colorByPoint: true,
                   data: [{
-                    name: '1 año (hacia 2023)',
+                    name: 'Se recuperará en 1 año (hacia 2023)',
                     y: 34,
                     sliced: true,
                     selected: true
                   }, {
-                    name: '+2 años (hacia 2024)',
+                    name: 'Se recuperará en más de 2 años (hacia 2024)',
                     y: 28
                   }, {
-                    name: '+4 años',
+                    name: 'Se recuperará en más de 4 años',
                     y: 10
                   }, {
-                    name: 'La industria no volverá a ser la misma',
+                    name: 'No volverá a ser la misma',
                     y: 6
                   }, {
-                    name: 'Se desconoce su opinión',
+                    name: 'Opinión desconocida (no hay registro)',
                     y: 22
                   }]
                 }]
-              });
-                        
-        </script>    
+              });                   
+        </script>
+
+        <p class="subtitulos"> 
+          Es importante considerar que las diferencias en los procesos de 
+          vacunación entre los países del mundo y los problemas logísticos pueden 
+          retrasar la reactivación, especialmente si los Gobiernos no levantan las 
+          restricciones impuestas, principal factor limitante ante cualquier reactivación. 
+          Asimismo, estas restricciones pueden tener afecciones incluso más significativas 
+          que el virus, debido al daño que provoca en la economía personal, familiar y 
+          del país. 
+        </p>
+      </div>
 
       <!-- Proyecciones -->
 
