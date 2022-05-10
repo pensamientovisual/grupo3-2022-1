@@ -26,19 +26,20 @@
       </div>
   
       <div>
-        <p class="parrafo">
+        <p class="subtitulos">
           Las aerolíneas han sido fuertemente golpeadas por la pandemia, afectando
           no solo sus ganancias sino la vida de trabajadores, funcionarios y
           viajeros en todo el mundo. Es por esto que, se han estudiado múltiples
           factores y consecuencias.
         </p>
-        <p class="parrafo">Observa el impacto</p>
+        <p class="subtitulos">Observa el impacto</p>
       </div>
   
       <!-- Grafico flujo (ISI) -->
       <div class>
         <p class="cuerpo1">Impacto en vuelos en todo el mundo</p>
-        <canvas id="primeratabla" height="90%"></canvas>
+        <p class="parrafo"> *Haz click en el color para eliminar las columnas*</p>
+        <canvas id="primeratabla" height="80%"></canvas>
         <script>
           var ctx = document.getElementById("primeratabla").getContext("2d");
           var myChart = new Chart(ctx, {
@@ -47,7 +48,7 @@
               labels: ["2019", "2020", "2021"],
               datasets: [
                 {
-                  label: "Cantidad de vuelos totales en M",
+                  label: "Cantidad de vuelos totales en millones",
                   data: [68.990, 49.929, 63.284],
                   backgroundColor: [
                     "rgb(66, 134, 244 ,0.5)",
@@ -56,7 +57,7 @@
                   ],
                 },
                 {
-                  label: "Cantidad de vuelos comerciales totales en M",
+                  label: "Cantidad de vuelos comerciales totales en millones",
                   data: [41.991, 24.439, 30.399],
                   backgroundColor: [
                     "rgb(255, 196, 102,0.5)",
@@ -81,9 +82,6 @@
         </script>
       </div>
   
-      <div class="parrafo">
-        <p>En resumen...</p>
-      </div>
       <!-- Fin flujo (ISI) -->
   
       <!-- Mapa mundi -->
