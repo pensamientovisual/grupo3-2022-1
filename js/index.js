@@ -18,7 +18,6 @@
             },
 
             title: {
-                text: 'Gasto gubernamental en aerolíneas nacionales'
             },
 
             mapNavigation: {
@@ -30,6 +29,7 @@
 
             legend: {
                 title: {
+                    text: 'Gasto gubernamental en aerolineas en MM de dolares',
                     style: {
                         color: ( // theme
                             Highcharts.defaultOptions &&
