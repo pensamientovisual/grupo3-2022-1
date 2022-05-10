@@ -13,7 +13,7 @@
         },
 
         title: {
-          text: "Impacto economico en la actividad aerea por Covid",
+          text: "Impacto económico en la actividad aérea por Covid",
         },
 
         legend: {
@@ -35,7 +35,7 @@
           },
           {
             type: "mapbubble",
-            name: "Perdida economica",
+            name: "Perdida económica",
             joinBy: ["iso-a3", "code3"],
             data: data,
             minSize: "10%",

@@ -30,7 +30,7 @@
 
             legend: {
                 title: {
-                    text: 'Gasto estatal en aerolineas (MM)',
+                    text: 'Gasto estatal en aerolíneas (MM)',
                     style: {
                         color: ( // theme
                             Highcharts.defaultOptions &&
